@@ -1,0 +1,153 @@
+
+/*Caracteristicas generales del contenedor*/
+#contenedor{
+    background: #FFF;
+    margin: 1em auto;
+    padding: 1em;
+    width: 770px;
+}
+
+/*Eliminar viñetas y margenes estandar a la lista*/
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Propiedades generales a los item de la lista*/
+ul li{
+    border-top: 1px solid #CCC;
+    margin: 1em 0;
+    padding: 1em;
+    width: auto;
+    overflow: hidden;
+     /*Recortar contenido, dibujar barras de desplazamiento. el valor hidder, recorta el contenido*/
+}
+
+/*Propiedades generales a las etiquetas de formulario*/
+ul li label.titulo{
+    float: left;
+    width: 150px;
+    text-align: right;
+}
+
+/*Propiedades generales a los controles*/
+ul li div.controles{
+    margin-left: 160px;
+}
+
+/*Propiedades generales al boton*/
+ul li.botones{
+    border-top: 2px solid #CCC;
+    clear: both;
+    float: none;
+    padding: 1em 0;
+    text-align: right;
+    width: 100%;
+}
+
+/*Tamaño de letra del value del boton*/
+ul li.botones input{ font-size: 18px;}
+
+/*NEgrita y color a los labels*/
+ul li label.titulo{ font-weight: bold; color: darkblue;}
+
+/*Distanciar los span*/
+ul li div span{
+    float: left;
+    padding: 0.3em 0;
+}
+
+ul li div span.completo{
+    width: 100%;
+}
+
+ul li div span.mitad{
+    width: 50%;
+}
+
+ul li div span.tercio{
+    width: 33%;
+}
+
+ul li div span.dostercios{
+    width: 66%;
+}
+
+/*Propieades para los label y los controles*/
+ul li div span label{
+    display: block;
+    font-size: 12px;
+    color: #333;
+}
+
+ul li input{ padding: 0.2em;}
+
+/**/
+input#apllUno,
+input#apllDos,
+input#direccion,
+input#email{
+    width: 260px;
+}
+
+input#codigopostal{ width: 80px;}
+
+select#provincia{ width: 100px;}
+
+select#pais{ width: 200px;}
+
+ul li.botones:hover{background-color: transparent;}
+
+/*focus a los controles*/
+ul li input:focus,ul li select:focus{
+    border: 2px solid #f00;
+}
+/*border al boton*/
+.botones input{  border: 2px solid #f00;}
+@supports (-webkit-appearance: -apple-pay-button) { 
+    .apple-pay-button {
+        display: inline-block;
+        -webkit-appearance: -apple-pay-button;
+    }
+    .apple-pay-button-black {
+        -apple-pay-button-style: black;
+     
+    }
+    .apple-pay-button-white {
+        -apple-pay-button-style: white;
+    }
+    .apple-pay-button-white-with-line {
+        -apple-pay-button-style: white-outline;
+    }
+}
+
+@supports not (-webkit-appearance: -apple-pay-button) {
+    .apple-pay-button {
+        display: inline-block;
+        background-size: 100% 60%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        padding: 0px;
+        box-sizing: border-box;
+        min-width: 200px;
+        min-height: 32px;
+        max-height: 64px;      
+    }
+    .apple-pay-button-black {
+        background-image: -webkit-named-image(apple-pay-logo-white);
+        background-color: black;
+    }
+    .apple-pay-button-white {
+        background-image: -webkit-named-image(apple-pay-logo-black);
+        background-color: white;
+    }
+    .apple-pay-button-white-with-line {
+        background-image: -webkit-named-image(apple-pay-logo-black);
+        background-color: white;
+        border: .5px solid black;
+    } 
+}
+
+

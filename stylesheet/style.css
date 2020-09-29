@@ -1,0 +1,31 @@
+body{
+    width: 0 auto;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{text-align: center;}
+
+h1, h2{font-family: Arial, Helvetica, sans-serif}
+
+h1{ font-size: 3em;}
+
+button:hover, input:hover{
+    background-color: blue
+}
+button:focus, input:focus{
+    background-color: rgb(47, 194, 10)
+}
+
+
+#boton:hover{
+    background-color: blue
+}
+#boton-crearfocus{
+    background-color: rgb(47, 194, 10)
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+
+    
